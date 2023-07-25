@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BUSCAR AVANZADO - Search in Google - Project 0 - Álvaro Valdiviejas Sánchez</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link href="css/style_project_0.css" rel="stylesheet">
+    </head>
+
+    <style>
+        @media (min-width: 600px)
+        {          
+
+            .info
+            {
+                visibility: visible;
+            }            
+        }
+        
+        @media (max-width: 1070px)
+        {
+            .info
+            {
+                visibility: hidden;
+            }
+        }        
+
+    </style>     
+
+    <body>
+
+        <div id="menu" style="text-align: right;">
+            <a href="index.html">Busqueda en Google</a>
+        </div>
+
+        <div id="subMenu">
+            <span>Búsqueda avanzada</span>
+        </div>
+
+        <div style="border-bottom: 1px solid #ebebeb; margin: 20px 0px 30px 0px;"></div>
+        
+        <form action="https://www.google.com/search" name="frmBuscarAvanzado">
+            
+            <div style="text-align: left; display: flex">
+                <div class="contenedor" name="contenedorBuscarAvanzado">
+
+                    <div style="font-size: 18px;">
+                        <span>Buscar páginas con...</span>
+                    </div>
+                    <div>
+                        
+                    </div>
+                    <div class="info" style="font-size: 13px; color: #777777; font-weight: 700;">
+                        <span>Haz lo siguiente en el cuadro de búsqueda</span>
+                    </div>
+
+
+                    <div>
+                        <span>todas estas palabras: </span>
+                    </div>
+                    <div>
+                        <input type="text" name="as_q">
+                    </div>
+                    <div class="info">
+                        <span>Escribe las palabras importantes: terrirer ratonero tricolor</span>
+                    </div>
+
+                    <div>
+                        <span>esta palabra o frase exactas: </span>
+                    </div>
+                    <div>                    
+                        <input type="text" name="as_epq">
+                    </div>
+                    <div class="info">
+                        <span>Escribe las palabras exactas entre comillas: "terrirer ratonero"</span>
+                    </div>
+
+                    <div>
+                        <span>cualquiera de estas palabras: </span>
+                    </div>
+                    <div>                    
+                        <input type="text" name="as_oq">
+                    </div>
+                    <div class="info">
+                        <span>Escribe OR entre todas las palabras que quieras: miniatura OR estándar</span>
+                    </div>
+                    
+                    <div>
+                        <span>ninguna de estas palabras: </span>
+                    </div>
+                    <div>                    
+                        <input type="text" name="as_eq">
+                    </div>
+                    <div class="info">
+                        <span>Añade un signo menos delante de las palabras que no quieras que aparezcan: -roedor, -"Jack Russell"</span>
+                    </div>
+                    
+                    <div></div>
+                    <div style="text-align: right;">
+                        <button id="btnBuscarAvanzado" type="submit" class="btn btn-primary btn-sm">Búsqueda avanzada</s></button>
+                    </div>                     
+                    <div class="info"></div>
+
+                </div>
+            </div>
+
+        </form>
+
+
+
+    </body>
+</html>
